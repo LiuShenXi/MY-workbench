@@ -3,7 +3,7 @@
 /// <reference types="@ant-design/pro-components" />
 /// <reference types="antd" />
 
-    import type { ProLayoutProps, HeaderProps } from "/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/@ant-design/pro-components";
+    import type { ProLayoutProps, HeaderProps } from "/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/@ant-design/pro-components";
     import type InitialStateType from '@@/plugin-initialState/@@initialState';
            type InitDataType = ReturnType<typeof InitialStateType>;
         

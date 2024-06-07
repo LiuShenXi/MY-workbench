@@ -274,6 +274,22 @@ export default [
     ],
   },
   {
+    name: '自定义组件',
+    path: '/components-demo',
+    icon: 'dashboard',
+    routes: [
+      {
+        path: '/components-demo',
+        redirect: '/components-demo/index',
+      },
+      {
+        name: '自定义组件',
+        path: '/components-demo/index',
+        component: './components-demo/index',
+      },
+    ],
+  },
+  {
     path: '/',
     redirect: '/dashboard/analysis',
   },

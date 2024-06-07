@@ -27,7 +27,7 @@
         "src/.umi/*"
       ],
       "@umijs/max": [
-        "/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/umi"
+        "/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/umi"
       ],
       "@umijs/max/typings": [
         "src/.umi/typings"

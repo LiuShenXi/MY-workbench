@@ -3,7 +3,7 @@
 import {
   IntlCache,
   createIntl,
-} from '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/react-intl';
+} from '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/react-intl';
 type OptionalIntlConfig = Omit<Parameters<typeof createIntl>[0], 'locale' | 'defaultLocale'>;
 export interface IRuntimeConfig {
     locale?: {

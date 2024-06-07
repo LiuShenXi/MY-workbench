@@ -4,15 +4,15 @@
 import React from 'react';
 import { ConfigProvider } from 'antd';
 
-import moment from '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/bn-bd';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/en';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/fa';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/id';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/ja';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/pt-br';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/zh-cn';
-import '/Users/liucong/Desktop/WORK-SPACE/my-workbench/node_modules/dayjs/locale/zh-tw';
+import moment from '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/bn-bd';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/en';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/fa';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/id';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/ja';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/pt-br';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/zh-cn';
+import '/Users/liucong/Desktop/WORK-SPACE/MY-workbench/node_modules/dayjs/locale/zh-tw';
 import { RawIntlProvider, getLocale, getDirection , setIntl, getIntl, localeInfo, event, LANG_CHANGE_EVENT } from './localeExports';
 
 
