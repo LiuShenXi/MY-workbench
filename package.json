@@ -56,7 +56,8 @@
     "rc-util": "^5.38.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-fittext": "^1.0.0"
+    "react-fittext": "^1.0.0",
+    "react-virtualized": "^9.22.5"
   },
   "devDependencies": {
     "@ant-design/pro-cli": "^2.1.5",

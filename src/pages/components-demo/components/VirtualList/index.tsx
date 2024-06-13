@@ -1,50 +1,37 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { IListProps } from './IListProps';
+import { Avatar, message } from 'antd';
+import List from 'rc-virtual-list';
+import { generateData } from './listData'
 
-const VirtualList: React.FC<IListProps> = ({ itemCount, itemHeight, renderItem }) => {
-  const [visibleItems, setVisibleItems] = useState<number[]>([]);
-  const listRef = useRef<HTMLDivElement>(null);
+interface DataItem {
+  uid: number;
+  name: string;
+  addr: string;
+}
 
-  const calculateVisibleItems = (): number[] => {
-    if (listRef.current) {
-      const scrollTop = listRef.current.scrollTop;
-      const clientHeight = listRef.current.clientHeight;
-      const startIndex = Math.floor(scrollTop / itemHeight);
-      const endIndex = Math.min(itemCount - 1, startIndex + Math.ceil(clientHeight / itemHeight));
-      return Array.from({ length: endIndex - startIndex + 1 }, (_, i) => startIndex + i);
-    }
-    return [];
-  };
-
-  const handleScroll = () => {
-    requestAnimationFrame(() => {
-      setVisibleItems(calculateVisibleItems());
-    });
-  };
+const VirtualListDemo: React.FC = () => {
+  const [dataList, setDataList] = useState<DataItem[]>([])
 
   useEffect(() => {
-    if (listRef.current) {
-      listRef.current.addEventListener('scroll', handleScroll);
-      handleScroll(); // 初始化可视项
-    }
-    return () => {
-      if (listRef.current) {
-        listRef.current.removeEventListener('scroll', handleScroll);
-      }
-    };
-  }, [itemCount, itemHeight]);
+    setDataList(generateData(3000))
+  }, [])
 
   return (
-    <div ref={listRef} style={{ overflowY: 'auto', height: '100%' }}>
-      <div style={{ height: itemCount * itemHeight, position: 'relative' }}>
-        {visibleItems.map(index => (
-          <div key={index} style={{ position: 'absolute', top: index * itemHeight, height: itemHeight }}>
-            {renderItem(index)}
-          </div>
-        ))}
+    <List 
+      data={dataList}
+      itemKey="uid"
+      height={500}
+      itemHeight={80}
+    >
+     {item => (
+      <div>
+        <span>{item.uid}</span>
+        <span>{item.name}</span>
+        <span>{item.addr}</span>
       </div>
-    </div>
-  );
+     )}
+    </List>
+  )
 };
 
-export default VirtualList;
+export default VirtualListDemo;
