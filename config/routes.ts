@@ -157,6 +157,12 @@ export default [
         path: '/list/card-list',
         component: './list/card-list',
       },
+      {
+        name: 'adultUUidList',
+        icon: 'smile',
+        path: '/list/adultUUidList',
+        component: './list/adultUUidList',
+      },
     ],
   },
   {
