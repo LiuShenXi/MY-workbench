@@ -59,8 +59,8 @@ export async function getRoutes() {
 '49': React.lazy(() => import(/* webpackChunkName: "p__components-demo__index" */'@/pages/components-demo/index.tsx')),
 '50': React.lazy(() => import('./EmptyRoute')),
 '51': React.lazy(() => import(/* webpackChunkName: "p__404" */'@/pages/404.tsx')),
-'ant-design-pro-layout': React.lazy(() => import(/* webpackChunkName: "umi__plugin-layout__Layout" */'/Users/liucong/Desktop/WORK-SPACE/MY-workbench/src/.umi/plugin-layout/Layout.tsx')),
-'umi/plugin/openapi': React.lazy(() => import(/* webpackChunkName: "umi__plugin-openapi__openapi" */'/Users/liucong/Desktop/WORK-SPACE/MY-workbench/src/.umi/plugin-openapi/openapi.tsx')),
+'ant-design-pro-layout': React.lazy(() => import(/* webpackChunkName: "umi__plugin-layout__Layout" */'C:/WORK-SPACE/MY-workbench/src/.umi/plugin-layout/Layout.tsx')),
+'umi/plugin/openapi': React.lazy(() => import(/* webpackChunkName: "umi__plugin-openapi__openapi" */'C:/WORK-SPACE/MY-workbench/src/.umi/plugin-openapi/openapi.tsx')),
 },
   };
 }
