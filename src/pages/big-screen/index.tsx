@@ -9,7 +9,7 @@ const bigScreen: React.FC = () => {
         >
             <div className={styles.wrapper}>
                 <div className={styles.header}>
-                    <p></p>
+                    <span className={styles.title}>各国薪资水平及税率分析</span>
                 </div>
             </div>
         </div>
