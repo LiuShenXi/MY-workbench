@@ -296,6 +296,27 @@ export default [
     ],
   },
   {
+    name: '智慧大屏页面',
+    path: '/big-screen',
+    icon: 'dashboard',
+    routes: [
+      {
+        path: '/big-screen',
+        redirect: '/big-screen/index',
+      },
+      {
+        name: '智慧大屏页面',
+        path: '/big-screen/index',
+        component: './big-screen/index',
+        headerRender: false,
+        footerRender: false,
+        menuRender: false,
+        menuHeaderRender: false
+
+      },
+    ],
+  },
+  {
     path: '/',
     redirect: '/dashboard/analysis',
   },
